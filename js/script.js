@@ -178,11 +178,7 @@ $(function () {
         nav.toggleClass("show");
     });
 
-    // navLink.forEach(nav => {
-    //     nav.addEventListener('click', () => {
-    //         navigation.classList.remove('show');
-    //     });
-    // });
+  
     navigation.addEventListener('click', (evt) => {
         const target = evt.target;
         if (target && target.classList.contains('nav__link')) {
