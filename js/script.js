@@ -109,8 +109,8 @@ $(function () {
         fade: true,
         arrows: true,
         dots: true,
-        prevArrow: `<div  class="modal-work__btn"><img  src="img/icon_back_normal.png" height="40" alt=""></div>`, // Кастомная стрелка "назад"
-        nextArrow: `<div  class="modal-work__btn--next"><img src="img/icon_next_normal.png" height="40" alt=""></div>`,
+        prevArrow: `<button type="button" class="modal-work__btn"><img  src="img/icon_back_normal.png" height="40" alt=""></button>`, // Кастомная стрелка "назад"
+        nextArrow: `<button type="button" class="modal-work__btn--next"><img src="img/icon_next_normal.png" height="40" alt=""></button>`,
     });
 
     $(".slickPrev").on("click", function (event) {
