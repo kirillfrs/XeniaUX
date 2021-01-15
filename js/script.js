@@ -107,8 +107,10 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
-        arrows: false,
+        arrows: true,
         dots: true,
+        prevArrow: `<div  class="modal-work__btn"><img  src="img/icon_back_normal.png" height="40" alt=""></div>`, // Кастомная стрелка "назад"
+        nextArrow: `<div  class="modal-work__btn--next"><img src="img/icon_next_normal.png" height="40" alt=""></div>`,
     });
 
     $(".slickPrev").on("click", function (event) {
@@ -178,7 +180,7 @@ $(function () {
         nav.toggleClass("show");
     });
 
-  
+
     navigation.addEventListener('click', (evt) => {
         const target = evt.target;
         if (target && target.classList.contains('nav__link')) {
